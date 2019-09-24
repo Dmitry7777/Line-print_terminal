@@ -1,27 +1,27 @@
 #ifndef LPT_H
 #define LPT_H
 
-#define LPT_STROBE INPUT
-#define LPT_STROBE OUTPUT
-#define LPT_D0 OUTPUT
-#define LPT_D1 OUTPUT
-#define LPT_D2 OUTPUT
-#define LPT_D3 OUTPUT
-#define LPT_D4 OUTPUT
-#define LPT_D5 OUTPUT
-#define LPT_D6 OUTPUT
-#define LPT_D7 OUTPUT
-#define LPT_ACK INPUT
-#define LPT_BUSY INPUT
-#define LPT_PaperOut INPUT
-#define LPT_SELECT INPUT
-#define LPT_LineFeed INPUT
-#define LPT_LineFeed OUTPUT
-#define LPT_ERROR INPUT
-#define LPT_RESET INPUT
-#define LPT_RESET OUTPUT
-#define LPT_SelectPrinter INPUT
-#define LPT_SelectPrinter OUTPUT
+#define IO_MCU_LPT_STROBE INPUT
+#define IO_MCU_LPT_STROBE OUTPUT
+#define IO_MCU_LPT_D0 OUTPUT
+#define IO_MCU_LPT_D1 OUTPUT
+#define IO_MCU_LPT_D2 OUTPUT
+#define IO_MCU_LPT_D3 OUTPUT
+#define IO_MCU_LPT_D4 OUTPUT
+#define IO_MCU_LPT_D5 OUTPUT
+#define IO_MCU_LPT_D6 OUTPUT
+#define IO_MCU_LPT_D7 OUTPUT
+#define IO_MCU_LPT_ACK INPUT
+#define IO_MCU_LPT_BUSY INPUT
+#define IO_MCU_LPT_PaperOut INPUT
+#define IO_MCU_LPT_SELECT INPUT
+#define IO_MCU_LPT_LineFeed INPUT
+#define IO_MCU_LPT_LineFeed OUTPUT
+#define IO_MCU_LPT_ERROR INPUT
+#define IO_MCU_LPT_RESET INPUT
+#define IO_MCU_LPT_RESET OUTPUT
+#define IO_MCU_LPT_SelectPrinter INPUT
+#define IO_MCU_LPT_SelectPrinter OUTPUT
 
 uint8_t PROCESS_STROBE;
 uint8_t PROCESS_D0;
@@ -63,23 +63,23 @@ PROCESS_ERROR = ERROR;
 PROCESS_RESET = RESET;
 PROCESS_SelectPrinter = SelectPrinter;
 
-pinMode(STROBE, LPT_STROBE); //
-pinMode(D0, LPT_D0); //
-pinMode(D1, LPT_D1); //
-pinMode(D2, LPT_D2); //
-pinMode(D3, LPT_D3); //
-pinMode(D4, LPT_D4); //
-pinMode(D5, LPT_D5); //
-pinMode(D6, LPT_D6); //
-pinMode(D7, LPT_D7); //
-pinMode(ACK, LPT_ACK); //
-pinMode(BUSY, LPT_BUSY); //
-pinMode(PaperOut, LPT_PaperOut); //
-pinMode(SELECT, LPT_SELECT); //
-pinMode(LineFeed, LPT_LineFeed); //
-pinMode(ERROR, LPT_ERROR); //
-pinMode(RESET, LPT_RESET); //
-pinMode(SelectPrinter, LPT_SelectPrinter); //
+pinMode(STROBE, IO_MCU_LPT_STROBE); //
+pinMode(D0, IO_MCU_LPT_D0); //
+pinMode(D1, IO_MCU_LPT_D1); //
+pinMode(D2, IO_MCU_LPT_D2); //
+pinMode(D3, IO_MCU_LPT_D3); //
+pinMode(D4, IO_MCU_LPT_D4); //
+pinMode(D5, IO_MCU_LPT_D5); //
+pinMode(D6, IO_MCU_LPT_D6); //
+pinMode(D7, IO_MCU_LPT_D7); //
+pinMode(ACK, IO_MCU_LPT_ACK); //
+pinMode(BUSY, IO_MCU_LPT_BUSY); //
+pinMode(PaperOut, IO_MCU_LPT_PaperOut); //
+pinMode(SELECT, IO_MCU_LPT_SELECT); //
+pinMode(LineFeed, IO_MCU_LPT_LineFeed); //
+pinMode(ERROR, IO_MCU_LPT_ERROR); //
+pinMode(RESET, IO_MCU_LPT_RESET); //
+pinMode(SelectPrinter, IO_MCU_LPT_SelectPrinter); //
   };
 void begin(uint8_t PORT){
  digitalWrite(PROCESS_STROBE, HIGH);
